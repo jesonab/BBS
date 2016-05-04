@@ -132,19 +132,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="css\" />
-    <Folder Include="images\" />
-    <Folder Include="js\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="admin\add.aspx" />
+    <Content Include="admin\index.html" />
     <Content Include="admin\js\add.js" />
     <Content Include="admin\js\login.js" />
+    <Content Include="admin\js\nav.js" />
     <Content Include="admin\login.html" />
     <Content Include="admin\nav.html" />
+    <Content Include="admin\Zhuce.html" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\Antlr3.Runtime.pdb" />
     <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
@@ -205,6 +206,12 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="admin\css\bootstrap-theme.css" />
+    <Content Include="admin\css\bootstrap-theme.min.css" />
+    <Content Include="admin\css\bootstrap.css" />
+    <Content Include="admin\css\bootstrap.min.css" />
+    <Content Include="admin\css\Tongyong.css" />
+    <Content Include="admin\css\Zcstyle.css" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -218,10 +225,20 @@
     <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="admin\ashx\login.ashx" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\normal.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\npm.js" />
     <Content Include="Zhuce.html" />
+    <Content Include="admin\ashx\nav.ashx" />
     <None Include="bin\Web.dll.config" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\Web.csprojResolveAssemblyReference.cache" />
+    <Content Include="admin\css\bootstrap-theme.css.map" />
+    <Content Include="admin\css\bootstrap.css.map" />
+    <Content Include="obj\Debug\build.force" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -293,6 +310,9 @@
     </Compile>
     <Compile Include="admin\ashx\login.ashx.cs">
       <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ashx\nav.ashx.cs">
+      <DependentUpon>nav.ashx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
