@@ -1,0 +1,180 @@
+.con{
+	background: #FAFAD2
+}
+
+.con .hea .navba{
+	border-radius: none;
+	border: none;
+	background: #fff;
+	height: 30px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.con .hea .navba a{
+	padding:0px;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 12px;
+	color: #777
+}
+.login{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.modal-content{
+	width: 400px;
+}
+.as{
+	text-align: center;
+}
+.modal-body{
+	margin-bottom: 10px
+}
+.jumbotron{
+	background:url(../images/normal.jpg);
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 380px;
+	background-size:cover;
+}
+.ti{
+	font-family:Microsoft JhengHei;
+	color: #fff
+}
+.search{
+	width: 550px;
+	margin:0px auto;
+	margin-top: 230px;
+}
+.search2{
+	height: 50px;
+	border-radius: 0px;
+	font-size: 16px;
+}
+.ss{
+	margin-top: 9px;
+	margin-right: 9px;
+	font-size: 20px;
+}
+
+.bod{
+	width: 1000px;
+	margin: 0px auto;
+	background: #f9f9f9
+}
+.bod .lanmu{
+	border-top:1px solid #eee;
+	padding-top: 13px;
+	padding-left: 13px;
+	padding-right: 13px;
+	font-size: 13px;
+	border-bottom:1px solid #eee;
+}
+
+.bod .lanmu p{
+	border-left: 4px solid #39f;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.bod .lmxiang{
+	margin-left: 35px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bod .lmxiang a{
+	color: #39f;
+	font-size: 13px;
+}
+
+.zhengwen{
+	background: #fff;
+	border-top: 1px solid #f0f0f0
+}
+
+.zhengwen .media{
+	display: block;
+	padding:10px;
+	padding-top:16px;
+	padding-left: 40px;
+	margin-top: 0px;
+	border-bottom:1px solid #eee;
+}
+
+.zhengwen .media:hover{
+	background: #f4f4f4
+}
+
+.zhengwen .media-body{
+	width:500px;
+}
+
+.zhengwen .media .media-right{
+	padding-right: 80px;
+	font-size: 12px;
+}
+
+.yulan{
+	font-size: 12px;
+}
+
+.sp{
+	font-size: 250px;
+	color: #fff;
+}
+.sp:hover{
+	color: #fff;
+	text-decoration:none;
+}
+
+.qq{
+	color: #fff;
+	margin-bottom: -50px;
+}
+.fon{
+	margin-top: 30px;
+
+}
+.asd{
+	width:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.content0{
+	width:120px;
+	right:80px;
+    position:fixed;
+    bottom:30px;
+}
+.filterinput{
+	background:#35f
+	border-radius:15px;
+	width:90%;
+	height:30px;
+	border:thin solid #FFF;
+	text-indent:0.5em;
+	font-weight:bold;
+	color:#FFF;
+}
+#demo-list a{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100%;
+}

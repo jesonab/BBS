@@ -36,29 +36,3 @@
 	border-radius:0px;
 	resize: none;
 	}
-.fon{
-	background:#333;
-	height:100px;
-	padding-left:30%;
-	padding-right: 30%;
-	padding-top: 10px;
-	}
-.fon .ys{
-	margin:0px;
-	padding:0px;
-}
-.fon a{
-	color: #fff;
-	font-size: 12px;
-}
-.nei{
-	margin-left: 10px;
-	padding-right: 10px;
-	border-right: 1px dashed #ccc
-}
-.banquan{
-	font-size: 27px;
-	color: #fff;
-	margin-top: 25px;
-	font-family:Microsoft JhengHei;
-}
