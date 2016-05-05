@@ -139,6 +139,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="admin\add.aspx" />
+    <Content Include="admin\css\font-awesome.css" />
     <Content Include="admin\css\index.css" />
     <Content Include="admin\css\jquery-accordion-menu.css" />
     <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
