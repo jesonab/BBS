@@ -14,20 +14,26 @@
 </head>
 <body>
     <nav class="navbar navbar-default">
-        <div class="collapse navbar-collapse">
-            <ul id="menu-top-menu" class="nav navbar-nav">
-                <li class="current-menu-item"><a href="index.html" target="_parent">首页</a></li>
-                <li><a href="Category.html" target="_parent">版块</a></li>
-                <li><a href="CategoryContent.html" target="_parent">板块热点</a></li>
-                <li><a href="hot.html" target="_parent">加精帖子</a></li>
-                <li><a href="linkME.html" target="_parent">联系我们</a></li>
-                <li><a href="linkMEContent.html" target="_parent">常见反馈</a></li>
-                <li id="reg"><a href="User/add.html " target="_parent">注册</a></li>
-                <li id="login"><a href="User/login.html " target="_parent">登录</a></li>
-                <li id="exit"><span id="name"></span><a href="ashx/exit.ashx" target="_parent">注销</a></li>
-            </ul>
-        </div>
-    </nav>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="reg"><a href="add.html " target="_parent">注册</a></li>
+                    <li id="login"><a href="login.html " target="_parent">登录</a></li>
+                    <li id="exit"><span id="name"></span><a href="ashx/exit.ashx" target="_parent">注销</a></li>
+                </ul>
+            </div>
+         </div>
+</nav>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

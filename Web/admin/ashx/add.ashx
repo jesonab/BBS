@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="add.ashx.cs" Class="Web.admin.ashx.ashx" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="add.ashx.cs" Class="Web.Admin.ashx.add" %>

@@ -138,10 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="admin\add.aspx" />
     <Content Include="admin\css\font-awesome.css" />
     <Content Include="admin\css\index.css" />
     <Content Include="admin\css\jquery-accordion-menu.css" />
+    <Content Include="admin\css\pagination.css" />
+    <Content Include="admin\exit.html" />
     <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="admin\IMAGES\login.jpg" />
     <Content Include="admin\IMAGES\normal - 副本.jpg" />
@@ -151,13 +152,17 @@
     <Content Include="admin\js\add.js" />
     <Content Include="admin\js\bootstrap.js" />
     <Content Include="admin\js\bootstrap.min.js" />
+    <Content Include="admin\js\exit.js" />
+    <Content Include="admin\js\index.js" />
     <Content Include="admin\js\jquery-1.11.2.min.js" />
+    <Content Include="admin\js\jquery-1.4.1.min.js" />
     <Content Include="admin\js\jquery-accordion-menu.js" />
     <Content Include="admin\js\jquery.min.js" />
+    <Content Include="admin\js\jquery.pagination1.js" />
     <Content Include="admin\js\login.js" />
     <Content Include="admin\js\nav.js" />
     <Content Include="admin\js\npm.js" />
-    <Content Include="admin\login.html" />
+    <Content Include="admin\add.html" />
     <Content Include="admin\nav.html" />
     <Content Include="admin\Zhuce.html" />
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -251,6 +256,7 @@
     <Content Include="admin\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="admin\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="admin\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="admin\ashx\exit.ashx" />
     <None Include="bin\Web.dll.config" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\Web.csprojResolveAssemblyReference.cache" />
@@ -316,15 +322,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\add.aspx.cs">
-      <DependentUpon>add.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\add.aspx.designer.cs">
-      <DependentUpon>add.aspx</DependentUpon>
-    </Compile>
     <Compile Include="admin\ashx\add.ashx.cs">
       <DependentUpon>add.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ashx\exit.ashx.cs">
+      <DependentUpon>exit.ashx</DependentUpon>
     </Compile>
     <Compile Include="admin\ashx\login.ashx.cs">
       <DependentUpon>login.ashx</DependentUpon>

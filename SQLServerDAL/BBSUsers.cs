@@ -61,7 +61,7 @@ namespace BBS.SQLServerDAL
 			if (model.UBirthday != null)
 			{
 				strSql1.Append("UBirthday,");
-				strSql2.Append("'"+model.UBirthday+"',");
+				strSql2.Append("'"+model.UBirthday.ToString("YY-MM-DD") + "',");
 			}
 			if (model.Usex != null)
 			{
@@ -81,7 +81,7 @@ namespace BBS.SQLServerDAL
 			if (model.URegDate != null)
 			{
 				strSql1.Append("URegDate,");
-				strSql2.Append("'"+model.URegDate+"',");
+				strSql2.Append("'"+model.URegDate.ToString("YY-MM-DD")+"',");
 			}
 			if (model.UState != null)
 			{
