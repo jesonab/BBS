@@ -33,7 +33,8 @@ function () {
             success: function (data) {
                 var json = eval('(' + data + ')');
                 alert(json.info);
-            },
+                window.location.href = "../index.html";//页面跳转
+            }, 
         });
 
       

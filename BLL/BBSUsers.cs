@@ -25,10 +25,22 @@ namespace BBS.BLL
 			return dal.GetMaxId();
 		}
 
-		/// <summary>
-		/// 是否存在该记录
-		/// </summary>
-		public bool Exists(int Uid)
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="name">登录名</param>
+        /// <param name="pwd">密码</param>
+        /// <returns>返回用户编号。没有此用户返回-1</returns>
+        public int login(string name, string pwd)
+        {
+
+            return dal.login(name, pwd);
+        }
+
+        /// <summary>
+        /// 是否存在该记录
+        /// </summary>
+        public bool Exists(int Uid)
 		{
 			return dal.Exists(Uid);
 		}

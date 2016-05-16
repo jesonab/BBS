@@ -18,7 +18,6 @@
 					var json = eval('(' + data + ')');
 					//   $("#result").val(json); 
 					alert(json.info + " 编号为：" + json.ID);
-					window.location.href = "list1.html";//页面跳转
 				},
 				error: function (err) {
 					alert(err);

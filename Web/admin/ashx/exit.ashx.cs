@@ -15,7 +15,7 @@ namespace Web.admin.ashx
         {
             context.Response.ContentType = "text/plain";
             context.Session["ID"] = null;//清空session
-            context.Response.Write("Hello World");
+            context.Response.Redirect("../index.html");
         }
 
         public bool IsReusable

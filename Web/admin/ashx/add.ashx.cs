@@ -6,7 +6,7 @@ using System.Web;
 namespace Web.Admin.ashx
 {
     /// <summary>
-    ///     Zhuce 的摘要说明
+    ///     add 的摘要说明
     /// </summary>
     public class add : IHttpHandler, System.Web.SessionState.IRequiresSessionState
     {
@@ -35,11 +35,18 @@ namespace Web.Admin.ashx
                 model.Uname = txtuname;//用户姓名
                 model.UPassword = txtupassword;//用户密码
                 model.UEmail = txtuemail;//用户邮箱
+                //用户生日
+                string y = txtubirthday.Substring(0, 4);
+                string m = txtubirthday.Substring(4, 2);
+                string d = txtubirthday.Substring(6, 2);
+                txtubirthday = y + "-" + m + "-" + d;
                 model.UBirthday =DateTime.Parse(txtubirthday);//用户生日
                 model.UStatement = txtustatement;//签名档
-                model.URegDate = DateTime.Now;//用户注册时间
-              
-               model.Usex = false;//用户性别
+
+                
+
+
+                model.Usex = false;//用户性别
                 if (adminSex == "true") { model.Usex = true; }
 
                 BBS.BLL.BBSUsers bll = new BBS.BLL.BBSUsers();

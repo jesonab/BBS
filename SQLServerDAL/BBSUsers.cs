@@ -13,12 +13,38 @@ namespace BBS.SQLServerDAL
 	{
 		public BBSUsers()
 		{}
-		#region  Method
+        #region  Method
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="name">登录名</param>
+        /// <param name="pwd">密码</param>
+        /// <returns>返回用户编号。没有此用户返回-1</returns>
+        public int login(string name, string pwd)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select  top 1 adminID ");
+            strSql.Append(" from Admin ");
+            strSql.Append(" where LoginID='" + name + "' and LoginPWD='" + pwd + "'");
 
-		/// <summary>
-		/// 得到最大ID
-		/// </summary>
-		public int GetMaxId()
+            object obj = DbHelperSQL.GetSingle(strSql.ToString());
+            if (obj == null)
+            {
+                return -1;
+            }
+            else
+            {
+                return Convert.ToInt32(obj);
+            }
+
+
+        }
+
+
+    /// <summary>
+    /// 得到最大ID
+    /// </summary>
+    public int GetMaxId()
 		{
 		return DbHelperSQL.GetMaxID("Uid", "BBSUsers"); 
 		}
@@ -61,7 +87,7 @@ namespace BBS.SQLServerDAL
 			if (model.UBirthday != null)
 			{
 				strSql1.Append("UBirthday,");
-				strSql2.Append("'"+model.UBirthday.ToString("YY-MM-DD") + "',");
+				strSql2.Append("'"+model.UBirthday.ToString("yyyy-MM-dd") + "',");
 			}
 			if (model.Usex != null)
 			{
@@ -81,7 +107,7 @@ namespace BBS.SQLServerDAL
 			if (model.URegDate != null)
 			{
 				strSql1.Append("URegDate,");
-				strSql2.Append("'"+model.URegDate.ToString("YY-MM-DD")+"',");
+				strSql2.Append("'"+model.URegDate.ToString("yyyy-MM-dd") +"',");
 			}
 			if (model.UState != null)
 			{

@@ -142,12 +142,17 @@
     <Content Include="admin\css\index.css" />
     <Content Include="admin\css\jquery-accordion-menu.css" />
     <Content Include="admin\css\pagination.css" />
+    <Content Include="admin\css\tzcon.css" />
     <Content Include="admin\exit.html" />
     <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="admin\IMAGES\b2.jpg" />
+    <Content Include="admin\IMAGES\fat.png" />
+    <Content Include="admin\IMAGES\ftback.png" />
     <Content Include="admin\IMAGES\login.jpg" />
     <Content Include="admin\IMAGES\normal - 副本.jpg" />
     <Content Include="admin\IMAGES\normal.jpg" />
     <Content Include="admin\IMAGES\normal25.jpg" />
+    <Content Include="admin\IMAGES\userimg.png" />
     <Content Include="admin\index.html" />
     <Content Include="admin\js\add.js" />
     <Content Include="admin\js\bootstrap.js" />
