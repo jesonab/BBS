@@ -71,7 +71,7 @@ namespace BBS.SQLServerDAL
 			if (model.TTime != null)
 			{
 				strSql1.Append("TTime,");
-				strSql2.Append("'"+model.TTime+"',");
+				strSql2.Append("'"+model.TTime.ToString("yyyy-MM-dd") + "',");
 			}
 			if (model.TClickCount != null)
 			{
@@ -81,7 +81,7 @@ namespace BBS.SQLServerDAL
 			if (model.TLastClickT != null)
 			{
 				strSql1.Append("TLastClickT,");
-				strSql2.Append("'"+model.TLastClickT+"',");
+				strSql2.Append("'"+model.TLastClickT.ToString("yyyy-MM-dd") + "',");
 			}
 			strSql.Append("insert into BBSTopic(");
 			strSql.Append(strSql1.ToString().Remove(strSql1.Length - 1));

@@ -23,9 +23,9 @@ namespace BBS.SQLServerDAL
         public int login(string name, string pwd)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select  top 1 adminID ");
-            strSql.Append(" from Admin ");
-            strSql.Append(" where LoginID='" + name + "' and LoginPWD='" + pwd + "'");
+            strSql.Append("select  top 1 uname ");
+            strSql.Append(" from BBSUsers ");
+            strSql.Append(" where uname='" + name + "' and UPassword='" + pwd + "'");
 
             object obj = DbHelperSQL.GetSingle(strSql.ToString());
             if (obj == null)

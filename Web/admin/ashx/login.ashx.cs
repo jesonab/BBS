@@ -18,8 +18,8 @@ namespace Web.admin.ashx
 
             //获取GET方法传递参数：Request.QueryString["参数名称"];
             //获取POST方法传递参数：Request.Form["参数名称"];
-            string txtuname = context.Request.Form["txtuname"]; //保存文本框对象，提高效率
-            string txtupassword = context.Request.Form["txtupassword"];
+            string txtuname = context.Request.Form["uname"]; //保存文本框对象，提高效率
+            string txtupassword = context.Request.Form["PassWord"];
 
             BBS.BLL.BBSUsers bll = new BBS.BLL.BBSUsers();
 
